@@ -56,3 +56,6 @@ Lunch: [
 Object.keys(menu).forEach(m => menu[m].forEach(item => console.log(m + ":\n", "\t" + item.name + ",", "Price: " + item.price)));
 
 // "\t" for tab
+
+//forEach parameters, first is value, second is index, third is list
+//.map collects return values into list turns into string, .join inject into elment
