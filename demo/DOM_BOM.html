@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>DOM Document Object Model</h2>
+    <h2>BOM Browser Object Model</h2>
+    <h2>SPA Single Page Application</h2>
+    <nav id="">
+        <button id="whiskey">Whiskey "Page"</button>
+        <button id="tango">Tango "Page"</button>
+        <button id="foxtrot">Foxtrot "Page"</button>
+        <article id="page">Select a page</article>
+    </nav>
+</body>
+<script>
+    const pageContent = {
+        whiskey: `"For those rough days."`,
+        tango: `"Let's dance."`,
+        foxtrot: `"Hard but honest work."`
+    }
+    Object.entries(pageContent.forEach(([keyPageName, valueContent]) => {
+                        
+    }))
+    function handlePageButton(event) {
+        const pageName = event.target.id;
+        const html = pageContent[pageName];
+        page.innerHTML = html;
+    }
+    const buttonNodeList = document.querySelectorAll("nav button");
+    [...buttonNodeList].forEach(b=>b.addEventListener("click", handlePageButton));
+
+    // whiskey.addEventListener("click", handlePageButton);
+    // tango.addEventListener("click", handlePageButton);
+    // foxtrot.addEventListener("click", handlePageButton);
+    /****************** DOM BOM***************
+        window = {
+            document:{body:{innerHTML:""} },
+            location: {},
+            history: {}
+        }
+        }*******************************************/
+</script>
+
+</html>
